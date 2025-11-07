@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		19AC1DD22EBCD33A00BAF39E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AC1DD12EBCD33800BAF39E /* Package.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		19D26C962EBC75D9005299E0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,13 +23,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19AC1DD12EBCD33800BAF39E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		19D26C982EBC75D9005299E0 /* libPosSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPosSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		19AC1DE22EBCD51500BAF39E /* Exceptions for "Tests" folder in "PosSDK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PosSDKTests/PosSDKTests.swift,
+			);
+			target = 19D26C972EBC75D9005299E0 /* PosSDK */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		19D26C9A2EBC75D9005299E0 /* PosSDK */ = {
+		19AC1DDB2EBCD51500BAF39E /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PosSDK;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		19AC1DDE2EBCD51500BAF39E /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				19AC1DE22EBCD51500BAF39E /* Exceptions for "Tests" folder in "PosSDK" target */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,7 +67,9 @@
 		19D26C8F2EBC75D9005299E0 = {
 			isa = PBXGroup;
 			children = (
-				19D26C9A2EBC75D9005299E0 /* PosSDK */,
+				19AC1DD12EBCD33800BAF39E /* Package.swift */,
+				19AC1DDB2EBCD51500BAF39E /* Sources */,
+				19AC1DDE2EBCD51500BAF39E /* Tests */,
 				19D26C992EBC75D9005299E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +98,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				19D26C9A2EBC75D9005299E0 /* PosSDK */,
+				19AC1DDB2EBCD51500BAF39E /* Sources */,
 			);
 			name = PosSDK;
 			packageProductDependencies = (
@@ -121,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19AC1DD22EBCD33A00BAF39E /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
