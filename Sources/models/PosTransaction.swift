@@ -45,3 +45,20 @@ public struct PosTransaction: Codable {
         return try JSONSerialization.data(withJSONObject: dict, options: [])
     }
 }
+
+public struct ExecutePosTransactionRequest: Codable {
+    public let destination: String
+    public let panHash: String
+    public let amount: String
+    public let remark: String?
+    public let merchant: String
+    public let confirmations: Int?
+    public init(destination: String, panHash: String, amount: String, remark: String?, merchant: String, confirmations: Int?) {
+        self.destination = destination
+        self.panHash = panHash
+        self.amount = amount
+        self.remark = remark
+        self.merchant = merchant
+        self.confirmations = confirmations
+    }
+}
