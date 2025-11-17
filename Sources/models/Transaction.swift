@@ -1,3 +1,4 @@
+import Foundation
 public struct TransactionAsset: Codable {
     public let tokenAddress: String?
     public let symbol: String

@@ -1,3 +1,4 @@
+import Foundation
 public struct Signer: Codable {
     public let id: String
     public let address: String
